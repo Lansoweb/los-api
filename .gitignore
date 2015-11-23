@@ -25,3 +25,4 @@ config/autoload/*development.php
 cache.properties
 /.php_cs.cache
 /deployment.properties
+/composer.lock
