@@ -1,0 +1,44 @@
+{
+  "name" : "los/los-api",
+  "require" : {
+    "zendframework/zend-expressive" : "1.0.0rc2",
+    "zendframework/zend-stdlib" : "~2.5",
+    "zendframework/zend-expressive-fastroute" : "^0.2",
+    "zendframework/zend-servicemanager" : "^2.5",
+    "zendframework/zend-db" : "^2.6",
+    "zendframework/zend-paginator" : "~2.5",
+    "zendframework/zend-validator" : "~2.5",
+    "zendframework/zend-filter" : "~2.5",
+    "los/los-rate-limit" : "~0.9",
+    "los/basepath" : "~0.9",
+    "los/request-id" : "~0.9",
+    "los/response-time" : "~0.9",
+    "los/api-problem" : "~0.9",
+    "los/loslog" : "~2.0",
+    "nocarrier/hal" : "~0.9"
+  },
+  "require-dev" : {
+    "phpunit/phpunit" : "^4.8",
+    "squizlabs/php_codesniffer" : "^2.3"
+  },
+  "license" : "MIT",
+  "autoload-dev" : {
+    "psr-4" : {
+      "LosApiTest\\" : "test/"
+    }
+  },
+  "autoload" : {
+    "psr-4" : {
+      "LosApi\\" : "src/"
+    }
+  },
+  "type" : "library",
+  "scripts" : {
+    "test" : [ "php vendor/squizlabs/php_codesniffer/scripts/phpcs", "php vendor/phpunit/phpunit/phpunit" ]
+  },
+  "homepage" : "https://github.com/Lansoweb/los-api",
+  "authors" : [ {
+    "name" : "Leandro Silva",
+    "homepage" : "http://leandrosilva.info/"
+  } ]
+}
